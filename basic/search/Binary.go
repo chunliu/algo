@@ -4,7 +4,7 @@ package algo
 Approach: In a sorted list, start searching from the middle of the list.
 	Then constantly reduce the amount of data that need to be searched.
 Prerequisite: A sorted list.
-Complexity: O(log(n))
+Complexity: O(log n)
 */
 
 // BinarySearch find the key in a sorted list.
