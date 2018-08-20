@@ -11,7 +11,7 @@ import (
 **		- Recursively move the n-1 disk from From peg to Other peg.
 **		- Move the n-th disk (which is the biggest) from From peg to To peg.
 **		- Recursively move the n-1 disk from Other peg to To peg.
-** Complexity: O(n)
+** Complexity: O(2^n)
 **/
 
 // TowerOfHanoi resolve the Tower Of Hanoi problem.

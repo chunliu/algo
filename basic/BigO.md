@@ -14,12 +14,13 @@ There are five basic rules for calculating an algorithm's Big O notation:
 
 ## Some common Big O runtime
 
-Runtime   | Example
+Runtime    | Example
 -----------|----------
 O(log n)   | Binary search
 O(n)       | Simple search
 O(n*log n) | Quick sort
 O(n^2)     | Selection sort
+O(2^n)     | Tower of Hanoi
 O(n!)      | Traveling salesperson
 
 Input | log n | n | n^2 | 2^n | n!

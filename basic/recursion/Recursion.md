@@ -16,3 +16,7 @@ To address the performance problems caused by the recursion, we can rewrite the 
 1. Use tail recursion removal. Tail recursion occurs when the last thing a singly recursive algorithm does before returning is call itself.
 2. Store intermediate values.
 3. Mimic what the program does when it performs recursion. Push and pop the state to stack.
+
+## Some problems that can be solved with recusion
+
+- Tower of Hanoi
