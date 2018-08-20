@@ -2,7 +2,7 @@
 
 Big O notation is the notation that tells you how fast an algorithm is. It uses a function to describe how the algorithm's worst-case performance relates to the problem size as the size grows very large. The function is written within parentheses after a capital letter O. For example, O(n^2).
 
-### 5 Rules 
+## 5 Rules
 
 There are five basic rules for calculating an algorithm's Big O notation:
 
@@ -12,7 +12,7 @@ There are five basic rules for calculating an algorithm's Big O notation:
 4. If an algorithm performs an operation that takes O(f(N)) steps, and for every step in that operation it performs another O(g(N)) steps, the algorithm's total performance is O(f(N) × g(N)).
 5. Ignore constant multiples. If C is a constant, O(C × f(N)) is the same as O(f(N)), and O(f(C × N)) is the same as O(f(N)).
 
-### Some common Big O runtime
+## Some common Big O runtime
 
 Runtime   | Example
 -----------|----------
