@@ -31,3 +31,18 @@ func findSmallest(data []int) int {
 
 	return si
 }
+
+// SelectionSort2 implement selection sort without new slice.
+func SelectionSort2(data []int) []int {
+	for i := 0; i < len(data); i++ {
+		s := i
+		for j := i; j < len(data); j++ {
+			if data[s] > data[j] {
+				s = j // Find the smallest
+			}
+		}
+		data[i], data[s] = data[s], data[i] // Swap i and smallest
+	}
+
+	return data
+}
