@@ -17,6 +17,10 @@ To address the performance problems caused by the recursion, we can rewrite the 
 2. Store intermediate values.
 3. Mimic what the program does when it performs recursion. Push and pop the state to stack.
 
+## Algorithms that are based on Recursion
+
+- **Backtracking** use recursion to search for the best solution to complicated problems. These algorithms recursively build partial test solutions to solve the problem. When they find that a test solution cannot lead to a usable final solution, they backtrack, discarding that test solution and continuing the search from farther up the call stack.
+
 ## Some problems that can be solved with recusion
 
 - Tower of Hanoi

@@ -24,3 +24,16 @@ func TestBinarySearch(t *testing.T) {
 		t.Errorf("Failed. Expected -1, got %v", i)
 	}
 }
+
+func TestBinarySearch2(t *testing.T) {
+	items := []int{1, 3, 5, 6, 10, 22, 34}
+	i := BinarySearch2(items, 6, 0, len(items)-1)
+	if i != 3 {
+		t.Errorf("Failed. Expected 3, got %v", i)
+	}
+
+	i = BinarySearch2(items, 50, 0, len(items)-1)
+	if i != -1 {
+		t.Errorf("Failed. Expected -1, got %v", i)
+	}
+}

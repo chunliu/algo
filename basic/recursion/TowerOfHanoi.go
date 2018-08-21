@@ -7,7 +7,7 @@ import (
 
 /**
 ** Problem: https://www.lintcode.com/problem/tower-of-hanoi/description
-** Approach: Recusion
+** Approach: Recursion
 **		- Recursively move the n-1 disk from From peg to Other peg.
 **		- Move the n-th disk (which is the biggest) from From peg to To peg.
 **		- Recursively move the n-1 disk from Other peg to To peg.
