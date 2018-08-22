@@ -12,6 +12,9 @@ func InsertionSort(data []int) []int {
 	for i := 0; i < len(data); i++ {
 		for j := 0; j < i; j++ {
 			if data[j] > data[i] {
+				// Move data[i] to position j
+				// Shift data[j:i] 1 position to the right
+				// Remove data[i]
 				data = append(
 					append(data[:j],
 						append([]int{data[i]}, data[j:i]...)...), data[i+1:]...)

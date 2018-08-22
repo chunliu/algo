@@ -54,10 +54,19 @@ func TestQuickSort2(t *testing.T) {
 	}
 }
 
-func TestInsertionSort2(t *testing.T) {
+func TestInsertionSort(t *testing.T) {
 	items := []int{95, 78, 46, 58, 45, 86, 99, 251, 320}
 	expected := []int{45, 46, 58, 78, 86, 95, 99, 251, 320}
 	sorted := InsertionSort(items)
+	if !sliceEqual(expected, sorted) {
+		t.Errorf("Failed. Expected: %v; Got: %v", expected, sorted)
+	}
+}
+
+func TestMergeSort(t *testing.T) {
+	items := []int{95, 78, 46, 58, 45, 86, 99, 251, 320}
+	expected := []int{45, 46, 58, 78, 86, 95, 99, 251, 320}
+	sorted := MergeSort(items)
 	if !sliceEqual(expected, sorted) {
 		t.Errorf("Failed. Expected: %v; Got: %v", expected, sorted)
 	}

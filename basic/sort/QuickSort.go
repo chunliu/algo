@@ -10,7 +10,7 @@ import "math/rand"
 **		- Assemble the result: less + pivot + greater
 ** Complexity: average case: O(n*log n); worst case: O(n^2)
 **		- The height of the call stack is O(log n) (average case, worst case is O(n))
-**		- and each call stack takes O(n) time.
+**		- and each call stack takes O(n) time to split the list.
 **/
 
 // QuickSort sort the data by dividing them into two sub slices.
