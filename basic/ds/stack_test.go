@@ -24,3 +24,22 @@ func TestStack(t *testing.T) {
 		t.Errorf("Failed. Expected: nil, Got: %v", v)
 	}
 }
+
+func TestIsValidParentheses(t *testing.T) {
+	s := "()[]{}"
+	if !IsValidParentheses(s) {
+		t.Error("Failed")
+	}
+
+	s = "([)]"
+	if IsValidParentheses(s) {
+		t.Error("Failed")
+	}
+}
+
+func TestAddString(t *testing.T) {
+	s := AddString("123", "985")
+	if s != "1108" {
+		t.Errorf("Failed. Expected: 168. Got: %s", s)
+	}
+}

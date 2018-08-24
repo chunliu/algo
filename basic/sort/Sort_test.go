@@ -71,3 +71,35 @@ func TestMergeSort(t *testing.T) {
 		t.Errorf("Failed. Expected: %v; Got: %v", expected, sorted)
 	}
 }
+
+func EqualIntervals(i1, i2 []*Interval) bool {
+	if len(i1) != len(i2) {
+		return false
+	}
+
+	for i, v := range i1 {
+		if v.Start != i2[i].Start || v.End != i2[i].End {
+			return false
+		}
+	}
+
+	return true
+}
+
+func TestMergeIntervals(t *testing.T) {
+	intervals := []*Interval{
+		&Interval{2, 3},
+		&Interval{4, 5},
+		&Interval{6, 7},
+		&Interval{8, 9},
+		&Interval{1, 10},
+	}
+	expected := []*Interval{
+		&Interval{1, 10},
+	}
+
+	r := MergeIntervals(intervals)
+	if !EqualIntervals(expected, r) {
+		t.Errorf("Failed. Expected: %v, Get: %v", expected, r)
+	}
+}
