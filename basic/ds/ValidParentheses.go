@@ -1,4 +1,4 @@
-package algo
+package ds
 
 /**
 ** Problem: https://www.lintcode.com/problem/valid-parentheses/description

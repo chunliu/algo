@@ -1,4 +1,4 @@
-package algo
+package ds
 
 type Queue struct {
 	nodes []*node

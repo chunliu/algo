@@ -1,4 +1,4 @@
-package algo
+package ds
 
 import (
 	"bytes"

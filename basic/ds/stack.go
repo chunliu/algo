@@ -1,4 +1,4 @@
-package algo
+package ds
 
 type node struct {
 	value interface{}

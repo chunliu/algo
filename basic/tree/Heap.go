@@ -1,4 +1,4 @@
-package algo
+package tree
 
 /**
 ** Approach: Use the feature of heap
