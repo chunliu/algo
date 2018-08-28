@@ -58,6 +58,7 @@ func TraverseDepthFirst(root *BinaryNode, p IProcessNode) {
 	for q.Len() > 0 {
 		n := q.Dequeue().(*BinaryNode)
 		p.ProcessNode(n)
+		// Place all child nodes on the same level in the queue from left to right.
 		if n.LeftChild != nil {
 			q.Enqueue(n.LeftChild)
 		}
